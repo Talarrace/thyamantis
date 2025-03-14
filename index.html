@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Personagem Épica</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Seção Dados Básicos -->
+    <div class="section">
+      <h2>📝 Dados Básicos</h2>
+      <div class="input-group">
+        <div>
+          <label>Nome do Personagem</label>
+          <input type="text" id="nome" placeholder="Ex: Aragorn">
+        </div>
+        <div>
+          <label>Peso (kg)</label>
+          <input type="number" id="peso" placeholder="Ex: 80">
+        </div>
+        <div>
+          <label>Altura (m)</label>
+          <input type="number" id="altura" step="0.01" placeholder="Ex: 1.85">
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Traços -->
+    <div class="section">
+      <h2>⚖️ Traços</h2>
+      <div class="input-group">
+        <div>
+          <label>Porte Base</label>
+          <input type="number" id="porte_base">
+        </div>
+        <div>
+          <label>Bônus de Porte</label>
+          <input type="number" id="porte_bonus">
+        </div>
+        <div>
+          <label>Movimento Base</label>
+          <input type="number" id="movimento_base">
+        </div>
+        <div>
+          <label>Bônus de Movimento</label>
+          <input type="number" id="movimento_bonus">
+        </div>
+        <div>
+          <label>Conhecimento Base</label>
+          <input type="number" id="conhecimento_base">
+        </div>
+        <div>
+          <label>Bônus de Conhecimento</label>
+          <input type="number" id="conhecimento_bonus">
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Arsenal -->
+    <div class="section">
+      <h2>⚔️ Arsenal</h2>
+      <div class="input-group">
+        <div>
+          <label>Peso da Arma (kg)</label>
+          <input type="number" id="peso_arma">
+        </div>
+        <div>
+          <label>Grau de Armadura</label>
+          <input type="number" id="grau_armadura">
+        </div>
+        <div>
+          <label>Força do Arco</label>
+          <input type="number" id="forca_arco">
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Vantagens -->
+    <div class="section">
+      <h2>🌟 Vantagens</h2>
+      <div class="input-group">
+        <div>
+          <label>Valor de Aprendizado</label>
+          <input type="number" id="valor_aprendizado">
+        </div>
+        <div>
+          <label>Desconto de Vantagens</label>
+          <input type="number" id="desconto_vantagens" value="0">
+        </div>
+      </div>
+      <div id="vantagens" class="vantagens-container"></div>
+    </div>
+
+    <button id="gerar">🎮 Gerar Ficha Completa</button>
+
+    <!-- Ficha Final -->
+    <div class="ficha-final" id="ficha_final"></div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
